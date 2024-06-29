@@ -6,35 +6,35 @@ We appreciate your interest in contributing to Project Mētis! This document out
 
 1. **Fork the Repository:** Create a fork of the Project Mētis repository on GitHub.
 2. **Clone your Fork:** Clone your forked repository to your local machine using Git.
-
-- `git clone [https://github.com/](https://github.com/)<your-username>/project-metis.git`
-
-- Replace `<your-username>` with your actual GitHub username.
-
-4. **Set up your Development Environment:** Install the required dependencies for the project. Refer to the README file for specific instructions.
-5. **Create a Branch:** Create a new branch for your feature or bug fix. This helps keep your changes isolated from the main codebase.
-   `git checkout -b <branch-name>`
-
-- Replace `<branch-name>` with a descriptive name for your branch (e.g., `fix-navigation-bug`, `add-profile-feature`).
+   ```bash
+   git clone https://<your_username>@github.com/<your_username>/project-metis.git
+   ```
+   Replace `<your-username>` with your actual GitHub username.
+3. **Set up your Development Environment:** Install the required dependencies for the project. Refer to the README file for specific instructions.
+4. **Create a Branch:** Create a new branch for your feature or bug fix. This helps keep your changes isolated from the main codebase.
+   ```bash
+   git checkout -b <branch-name>
+   ```
+   Replace `<branch-name>` with a descriptive name for your branch (e.g., `fix-navigation-bug`, `add-user-profile-feature`).
 
 **Making Changes:**
 
 1. **Make your changes:** Edit the relevant files and implement your desired changes.
 2. **Write Unit Tests:** (Highly recommended) Add unit tests for your changes to ensure functionality and prevent regressions. Refer to the project's testing framework documentation for guidance.
 3. **Commit your Changes:** Commit your changes to your local branch with a descriptive commit message. Use clear and concise language that reflects the purpose of your changes.
-
-- `git add <modified-files>`
-- `git commit -m "<descriptive commit message>"`
-- Replace `<modified-files>` with a list of files you modified.
+   ```bash
+   git add <modified-files>
+   git commit -m "<descriptive commit message>"
+   ```
+   Replace `<modified-files>` with a list of files you modified.
 
 **Submitting your Contribution:**
 
 1. **Push your changes:** Push your committed changes to your forked repository on GitHub.
-
-- `git push origin <branch-name>`
-
-- Replace `<branch-name>` with the name of the branch you created in step 5.
-
+   ```bash
+   git push origin <branch-name>
+   ```
+   Replace `<branch-name>` with the name of the branch you created in step 4.
 2. **Create a Pull Request:** Navigate to your forked repository on GitHub and create a pull request.
 3. **Fill out the Pull Request Template:** Provide a clear description of your changes, including the issue being addressed or the feature being added. Follow any existing pull request template guidelines.
 4. **Review Process:** We will review your pull request and provide feedback. You may need to make further changes based on the feedback before your contribution is merged.
