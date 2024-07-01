@@ -60,7 +60,7 @@ const HeroSection = () => {
 			className="bg-cover bg-center h-screen"
 			style={{
 				backgroundImage:
-					"url(https://source.unsplash.com/1600x900/?technology,ai)",
+					"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPjtBjaRloOPagwDE5Azf_bFQBu_moPMM28Q&s)",
 			}}
 		>
 			<div className="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center text-white px-4">
