@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import HeroSection from "./components/hero";
-import GradientCard from "./components/card";
 import AILibrary from "./components/tools";
+import AIUseCases from "./components/usecase";
 import Footer from "./components/footer";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
 			<Navbar />
 			<HeroSection />
 			<AILibrary />
+			<AIUseCases />
 			<Footer />
 		</div>
 	);
