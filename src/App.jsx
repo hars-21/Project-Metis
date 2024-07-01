@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import HeroSection from "./components/hero";
 import AILibrary from "./components/tools";
 import AIUseCases from "./components/usecase";
+import AboutUs from "./components/aboutus";
 import Footer from "./components/footer";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 			<HeroSection />
 			<AILibrary />
 			<AIUseCases />
+			<AboutUs />
 			<Footer />
 		</div>
 	);
