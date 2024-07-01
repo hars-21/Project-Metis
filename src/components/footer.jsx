@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // function Footer() {
 // 	const year = new Date().getFullYear();
 
@@ -26,87 +26,103 @@ import React from "react";
 // 	);
 // }
 
+import React from "react";
+
 const Footer = () => {
 	return (
-		<footer className="bg-gray-900 text-gray-300 py-8">
-			<div className="container mx-auto flex flex-wrap justify-between items-center px-6">
-				{/* Logo and Company Info */}
-				<div className="w-full lg:w-1/3 mb-6 lg:mb-0">
-					<h2 className="text-2xl font-bold text-white">Project Mētis</h2>
-					<p className="mt-2">
-						Your one-stop platform to discover and explore the best AI tools
-						available.
-					</p>
-					<p className="mt-2">
-						&copy; {new Date().getFullYear()} Project Mētis. All rights
-						reserved.
-					</p>
-				</div>
-
-				{/* Navigation Links */}
-				<div className="w-full lg:w-1/3 mb-6 lg:mb-0">
-					<h3 className="text-xl font-semibold text-white">Quick Links</h3>
-					<ul className="mt-2">
-						<li className="mt-1">
-							<a href="/about" className="hover:underline">
-								About Us
-							</a>
-						</li>
-						<li className="mt-1">
-							<a href="/services" className="hover:underline">
-								Services
-							</a>
-						</li>
-						<li className="mt-1">
-							<a href="/contact" className="hover:underline">
-								Contact
-							</a>
-						</li>
-						<li className="mt-1">
-							<a href="/faq" className="hover:underline">
-								FAQ
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				{/* Social Media Icons */}
-				<div className="w-full lg:w-1/3">
-					<h3 className="text-xl font-semibold text-white">Follow Us</h3>
-					<div className="flex mt-2">
-						<a
-							href="https://www.facebook.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mr-4 text-gray-400 hover:text-white"
-						>
-							<i className="fab fa-facebook-f"></i>
-						</a>
-						<a
-							href="https://www.twitter.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mr-4 text-gray-400 hover:text-white"
-						>
-							<i className="fab fa-twitter"></i>
-						</a>
-						<a
-							href="https://www.linkedin.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mr-4 text-gray-400 hover:text-white"
-						>
-							<i className="fab fa-linkedin-in"></i>
-						</a>
-						<a
-							href="https://www.instagram.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mr-4 text-gray-400 hover:text-white"
-						>
-							<i className="fab fa-instagram"></i>
-						</a>
+		<footer className="bg-gray-800 text-white py-8">
+			<div className="container mx-auto px-6">
+				<div className="flex flex-col md:flex-row justify-between">
+					{/* Logo and Description */}
+					<div className="mb-6 md:mb-0">
+						<h2 className="text-3xl font-bold">Project Metis</h2>
+						<p className="mt-2 text-gray-400">
+							Your go-to platform for discovering the best AI tools in the
+							market.
+						</p>
 					</div>
+
+					{/* Navigation Links */}
+					<div className="mb-6 md:mb-0">
+						<h3 className="text-xl font-semibold mb-2">Navigation</h3>
+						<ul>
+							<li>
+								<a href="#" className="text-gray-400 hover:text-white">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text-gray-400 hover:text-white">
+									AI Library
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text-gray-400 hover:text-white">
+									Use Cases
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text-gray-400 hover:text-white">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					{/* Resources Links */}
+					<div className="mb-6 md:mb-0">
+						<h3 className="text-xl font-semibold mb-2">Resources</h3>
+						<ul>
+							<li>
+								<a href="#" className="text-gray-400 hover:text-white">
+									Blog
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text-gray-400 hover:text-white">
+									Tutorials
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text-gray-400 hover:text-white">
+									Support
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text-gray-400 hover:text-white">
+									Privacy Policy
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					{/* Contact Info */}
+					<div>
+						<h3 className="text-xl font-semibold mb-2">Contact Us</h3>
+						<p className="text-gray-400">Email: contact@projectmetis.com</p>
+						<p className="text-gray-400">Phone: +123 456 7890</p>
+						<div className="mt-4">
+							<a href="#" className="text-gray-400 hover:text-white mr-4">
+								<i className="fab fa-facebook-f"></i>
+							</a>
+							<a href="#" className="text-gray-400 hover:text-white mr-4">
+								<i className="fab fa-twitter"></i>
+							</a>
+							<a href="#" className="text-gray-400 hover:text-white mr-4">
+								<i className="fab fa-linkedin-in"></i>
+							</a>
+							<a href="#" className="text-gray-400 hover:text-white">
+								<i className="fab fa-github"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				{/* Footer Bottom */}
+				<div className="border-t border-gray-700 mt-6 pt-6 text-center">
+					<p className="text-gray-400">
+						&copy; 2024 Project Metis. All rights reserved.
+					</p>
 				</div>
 			</div>
 		</footer>
