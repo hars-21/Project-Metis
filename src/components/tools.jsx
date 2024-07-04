@@ -266,6 +266,7 @@ const AILibrary = () => {
 								<a
 									href={tool.url}
 									className="mt-4 inline-block text-indigo-600 hover:underline"
+									target="_blank"
 								>
 									Learn more
 								</a>
