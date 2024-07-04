@@ -154,18 +154,30 @@ import React from "react";
 
 const aiTools = {
 	GenAI: [
-		{ name: "ChatGPT", description: "OpenAI's language model", url: "#" },
-		{ name: "Gemini", description: "Gemini AI tool", url: "#" },
-		{ name: "Claude", description: "Anthropic's AI assistant", url: "#" },
 		{
-			name: "GPT-3",
-			description: "Generative Pre-trained Transformer 3",
-			url: "#",
+			name: "ChatGPT",
+			description: "OpenAI's language model",
+			url: "https://chatgpt.com/",
 		},
 		{
-			name: "BERT",
-			description: "Bidirectional Encoder Representations from Transformers",
-			url: "#",
+			name: "Gemini",
+			description: "Gemini AI tool",
+			url: "https://gemini.google.com/app",
+		},
+		{
+			name: "Claude",
+			description: "Anthropic's AI assistant",
+			url: "https://claude.ai/",
+		},
+		{
+			name: "Meta AI",
+			description: "Meta's AI trained on Llama 3",
+			url: "https://www.meta.ai/",
+		},
+		{
+			name: "Llama 3",
+			description: "AI-powered language model by Llama",
+			url: "https://llama.meta.com/",
 		},
 	],
 	Audio: [
@@ -173,7 +185,7 @@ const aiTools = {
 		{
 			name: "Auphonic",
 			description: "Audio post-production web service",
-			url: "#",
+			url: "https://elevenlabs.io/",
 		},
 		{ name: "Descript", description: "Audio and video editing tool", url: "#" },
 		{ name: "Voicery", description: "Text-to-speech AI", url: "#" },
