@@ -62,72 +62,86 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-	const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-	const toggleMenu = () => {
-		setIsOpen(!isOpen);
-	};
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-	return (
-		<nav className="bg-gray-900 text-gray-300">
-			<div className="container mx-auto px-6 py-3 flex justify-between items-center">
-				{/* Logo */}
-				<div className="text-2xl font-bold text-white">Project Mētis</div>
+  return (
+    <nav className="bg-gray-900 text-gray-300">
+      <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+        {/* Logo */}
+        <div className="text-2xl font-bold text-white">Project Mētis</div>
 
-				{/* Menu Toggle Button for Mobile */}
-				<div className="lg:hidden">
-					<button
-						onClick={toggleMenu}
-						className="text-gray-300 focus:outline-none"
-					>
-						<svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
-							{isOpen ? (
-								<path fillRule="evenodd" d="M6 18L18 6M6 6l12 12" />
-							) : (
-								<path fillRule="evenodd" d="M4 5h16M4 12h16m-7 7h7" />
-							)}
-						</svg>
-					</button>
-				</div>
+        {/* Menu Toggle Button for Mobile */}
+        <div className="lg:hidden">
+          <button
+            onClick={toggleMenu}
+            className="bg-white p-2 rounded focus:outline-none"
+          >
+            <svg
+              className="h-6 w-6"
+              viewBox="0 0 24 24"
+              stroke="black"
+              fill="none"
+              strokeWidth="2"
+            >
+              {isOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 5h16M4 12h16m-7 7h7"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
 
-				{/* Navigation Links */}
-				<div
-					className={`lg:flex items-center ${
-						isOpen ? "block" : "hidden"
-					} w-full lg:w-auto`}
-				>
-					<ul className="lg:flex lg:space-x-6 mt-3 lg:mt-0 text-center">
-						<li className="mt-3 lg:mt-0">
-							<a href="/" className="block text-white hover:text-gray-400">
-								Home
-							</a>
-						</li>
-						<li className="mt-3 lg:mt-0">
-							<a href="/about" className="block text-white hover:text-gray-400">
-								About
-							</a>
-						</li>
-						<li className="mt-3 lg:mt-0">
-							<a
-								href="/services"
-								className="block text-white hover:text-gray-400"
-							>
-								Services
-							</a>
-						</li>
-						<li className="mt-3 lg:mt-0">
-							<a
-								href="/contact"
-								className="block text-white hover:text-gray-400"
-							>
-								Contact
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	);
+        {/* Navigation Links */}
+        <div
+          className={`lg:flex items-center ${
+            isOpen ? "block" : "hidden"
+          } w-full lg:w-auto`}
+        >
+          <ul className="lg:flex lg:space-x-6 mt-3 lg:mt-0 text-center">
+            <li className="mt-3 lg:mt-0">
+              <a href="/" className="block text-white hover:text-gray-400">
+                Home
+              </a>
+            </li>
+            <li className="mt-3 lg:mt-0">
+              <a href="/about" className="block text-white hover:text-gray-400">
+                About
+              </a>
+            </li>
+            <li className="mt-3 lg:mt-0">
+              <a
+                href="/services"
+                className="block text-white hover:text-gray-400"
+              >
+                Services
+              </a>
+            </li>
+            <li className="mt-3 lg:mt-0">
+              <a
+                href="/contact"
+                className="block text-white hover:text-gray-400"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
